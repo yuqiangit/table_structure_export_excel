@@ -128,18 +128,18 @@ foreach($tableName as $v){
 
 mysqli_close($link);
 
-$objRichText = new PHPExcel_RichText();
-$objRichText->createText('你好 ');
+//$objRichText = new PHPExcel_RichText();
+//$objRichText->createText('你好 ');
 
-$objPayable = $objRichText->createTextRun('你 好 吗？');
-$objPayable->getFont()->setBold(true);
-$objPayable->getFont()->setItalic(true);
-$objPayable->getFont()->setColor( new PHPExcel_Style_Color( PHPExcel_Style_Color::COLOR_DARKGREEN ) );
+//$objPayable = $objRichText->createTextRun('你 好 吗？');
+//$objPayable->getFont()->setBold(true);
+//$objPayable->getFont()->setItalic(true);
+//$objPayable->getFont()->setColor( new PHPExcel_Style_Color( PHPExcel_Style_Color::COLOR_DARKGREEN ) );
 
-$objRichText->createText(', unless specified otherwise on the invoice.');
+//$objRichText->createText(', unless specified otherwise on the invoice.');
 
-$objPHPExcel->getActiveSheet()->setCellValue('A13', 'Rich Text')
-    ->setCellValue('C13', $objRichText);
+//$objPHPExcel->getActiveSheet()->setCellValue('A13', 'Rich Text')
+//    ->setCellValue('C13', $objRichText);
 
 
 $objRichText2 = new PHPExcel_RichText();
